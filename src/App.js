@@ -11,7 +11,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.NODE_ENV === "development" ? "" : process.env.REACT_APP_PUBLIC_URL}>
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>
