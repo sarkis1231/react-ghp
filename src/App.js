@@ -8,10 +8,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Header from "./components/Header";
 
-
+// process.env.NODE_ENV === "development" ? "" : process.env.REACT_APP_PUBLIC_URL
 function App() {
   return (
-      <Router basename={process.env.NODE_ENV === "development" ? "" : process.env.REACT_APP_PUBLIC_URL}>
+      <Router basename="https://sarkis1231.github.io/react-ghp/">
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>
