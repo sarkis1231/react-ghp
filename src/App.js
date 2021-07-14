@@ -8,7 +8,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Header from "./components/Header";
 
-console.log(process.env.REACT_APP_PUBLIC_URL)
+
 function App() {
   return (
       <Router basename={process.env.PUBLIC_URL}>
