@@ -11,7 +11,7 @@ import Header from "./components/Header";
 // process.env.NODE_ENV === "development" ? "" : process.env.REACT_APP_PUBLIC_URL
 function App() {
   return (
-      <Router basename="https://sarkis1231.github.io/react-ghp/">
+      <Router>
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>
