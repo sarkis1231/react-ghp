@@ -8,10 +8,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Header from "./components/Header";
 
-// process.env.NODE_ENV === "development" ? "" : process.env.REACT_APP_PUBLIC_URL
+
 function App() {
   return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>
